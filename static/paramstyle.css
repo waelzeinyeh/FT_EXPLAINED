@@ -1,0 +1,74 @@
+@media (orientation: portrait) {
+	form {
+		width: 90vw;
+		height:60vh;
+		flex: none;
+	}
+
+	* {
+		font-family: sans-serif;
+		font-size: 3vw;
+	}
+
+	body {
+		margin: 1rem 1rem 1rem 1rem;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+	}
+
+    #eq {
+        width:100%;
+    }
+
+	#message {
+		margin: 3px 3px 3px 3px;
+		width: 50vw;
+	}
+
+	#msgtext {
+		padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+		text-align: center;
+		background-color: paleturquoise;
+	}
+
+
+}
+
+@media (orientation: landscape) {
+
+	form {
+		width: 50vw;
+		flex: none;
+	}
+
+	* {
+		font-family: sans-serif;
+		font-size: 1rem;
+	}
+
+	body {
+		margin: 1rem 1rem 1rem 1rem;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+    #eq {
+        width:35rem;
+    }
+
+	#message {
+		margin: 3px 3px 3px 3px;
+		width: 300px;
+	}
+
+	#msgtext {
+		padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+		text-align: center;
+		background-color: paleturquoise;
+	}
+}

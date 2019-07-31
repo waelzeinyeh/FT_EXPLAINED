@@ -1,0 +1,91 @@
+
+@media (orientation: portrait){
+    *{font-family:sans-serif;font-size:3vw;}
+    body{
+    flex-direction: row;
+	justify-content:space-around;
+	display: flex;
+	flex-wrap: wrap;
+    }
+    .control {
+	margin: 1rem 1rem 1rem 1rem;
+    }
+
+    #controls {
+	flex-direction: column;
+	width:40vw;
+	margin: 1vw 1vw 1vw 1vw ;
+	color: black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+    }
+    #message {
+	margin: 1vw 1vw 1vw 1vw ;
+	width: 50vw;
+    }
+
+    #msgtext {
+	padding: 1vw 1vw 1vw 1vw ;
+	text-align: center;
+	background-color: paleturquoise;
+    }
+    #graph{
+    width: 100vw;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+    img {
+	width: 100%;
+	border: 1px solid black;
+    }
+}
+
+
+
+
+
+@media (orientation: landscape){
+    *{font-family:sans-serif;font-size:1rem;}
+
+    body{
+    flex-direction: row;
+	justify-content:flex-start;
+	display: flex;
+	flex-wrap: wrap;
+    }
+    .control {
+	margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+    }
+    #controls {
+	flex-direction: row;
+	width:100vw;
+	margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+	color: black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+    }
+    #message {
+    margin: 3px 3px 3px 3px;
+	width:300px;
+    }
+
+    #msgtext {
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+	text-align: center;
+	background-color: paleturquoise;
+    }
+
+    #graph{
+        width:700px;
+        margin: 3px 3px 3px 3px;
+    }
+    img {
+    width:100%;
+	border: 1px solid black;
+    }
+}
+
+
