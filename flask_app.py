@@ -600,5 +600,6 @@ def index():
         elif "about" in request.form:
             return render_template("about.html")
 
-
+##if the app is intended to be run on a local machine and not on a distant server, this line should be added:
+##app.run()
 
