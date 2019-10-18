@@ -1,4 +1,3 @@
-
 import matplotlib
 matplotlib.use("WebAgg")
 matplotlib.rcParams['animation.embed_limit'] = 2**128
