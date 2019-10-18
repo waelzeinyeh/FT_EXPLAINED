@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Fourier Transform Explained</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" /><link rel="stylesheet" href="{{ url_for('static', filename='font-awesome-4.7.0/css/font-awesome.min.css')}}" />
+</head>
+
+<body>
+	<form id="controls" action="" method="post">
+		<div class="control">
+			Frequency: <input type=number style="width:4rem;" name="freq" value={{freq_show}} min={{freq_min}} max={{freq_max}}> Hz
+		</div>
+		<input type=submit name="add_freq" value="Add Frequency" class="control">
+		<input type=submit name="ft" value="Fourier Transform" class="control">
+		<input type=submit name="del_freq" value="Delete Frequencies" class="control">
+		<input type=submit name="param" value="Parameters" class="control">
+		<input type=submit name="show_msg" value={{msg_check}} class="control">
+		<input type=submit name="about" value="About" class="control">
+	</form>
+
+	<div id="message">
+		{%if message:%}
+		<form id="msgtext" action="" method="post">
+
+			{{message | safe}}
+
+		</form>
+		{%endif%}
+	</div>
+
+	<div id="graph">
+		{%if image_data:%}
+		<img src='data:image/png;base64,{{image_data}}' />
+		{%endif%}
+
+		{%if movie_data:%}
+		{{movie_data | safe}}
+		{%endif%}
+	</div>
+
+</body>
+
+</html>
